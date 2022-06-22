@@ -5,4 +5,4 @@ from .models import Url
 class GetUrl(ModelForm):
     class Meta:
         model = Url
-        fields = ['text']
+        fields = ['origin_url']
