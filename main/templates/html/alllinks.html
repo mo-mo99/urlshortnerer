@@ -1,8 +1,8 @@
 {% extends 'html/index.html' %}
 {% load static %}
 {% block content %}
-
-<table class="table">
+<div class='container'>
+<table class="table table-striped">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -21,7 +21,7 @@
         <td>{{link.visited}}</td>
         <td><form action={% url 'delete' link.id %} method='post'>
             {% csrf_token %}
-            <button>delete</button>
+            <button class='btn btn-danger'>delete</button>
         </form></td>
       </tr>
       
@@ -29,4 +29,5 @@
   
 {% endfor %}
 </table>
+</div>
 {% endblock %}

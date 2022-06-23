@@ -6,3 +6,4 @@ class GetUrl(ModelForm):
     class Meta:
         model = Url
         fields = ['origin_url']
+    
